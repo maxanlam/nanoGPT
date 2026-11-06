@@ -1,12 +1,24 @@
+# macOS
 .DS_Store
-.idea
+
+# IDEs
+.idea/
+.vscode/
 .ipynb_checkpoints/
-.vscode
+
+# Python cache
 __pycache__/
-*.bin
-*.pkl
-*.pt
-*.pyc
-input.txt
+*.py[cod]
+
+# Virtual environments (never commit these)
+.venv/
 env/
 venv/
+
+# Large model files (keep tracked unless deliberately excluded)
+# *.pt
+# *.bin
+# *.pkl
+
+# Experiment tracking
+wandb/

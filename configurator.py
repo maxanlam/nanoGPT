@@ -24,12 +24,12 @@ for arg in sys.argv[1:]:
         config_file = arg
         print(f"Overriding config with {config_file}:")
         with open(config_file) as f:
-            print(f.read())
+            print(f.read()) 
         exec(open(config_file).read())
     else:
         # assume it's a --key=value argument
         assert arg.startswith('--')
-        key, val = arg.split('=')
+        key, val = arg.split('=', 1) 
         key = key[2:]
         if key in globals():
             try:
