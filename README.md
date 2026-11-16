@@ -63,7 +63,7 @@ python chat.py
 Generate text:
 
 ```bash
-python sample_botmind.py --out_dir=out_botmind \
+python sample_botmind.py 
     --start="calm=00 joy=00 sad=00 fear=00 anger=01 lonely=00 curious=01"
 ```
 
